@@ -38,7 +38,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = s2s_sdk_ios.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/S2S_Demo_App-dizjazvopnfkzgdiiusdlzrqxeeq/Build/Products/Debug-iphoneos/s2s_sdk_ios.framework"; sourceTree = "<group>"; };
 		02A4E2E02534A7B600366D0F /* UIButton+layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+layer.swift"; sourceTree = "<group>"; };
 		02A4E2E32535928E00366D0F /* VODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VODViewController.swift; sourceTree = "<group>"; };
 		02BE1992253484FF00422CDB /* S2S Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S2S Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,7 +164,6 @@
 		8DE15BDB184CFB7122F27EA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */,
 				74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */,
 			);
 			name = Frameworks;

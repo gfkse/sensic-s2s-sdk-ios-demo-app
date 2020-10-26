@@ -20,19 +20,8 @@ class BaseViewController: UIViewController {
         return gradient
     }()
 
-    var statusBarStyle: UIStatusBarStyle = .default {
-        didSet {
-            setNeedsStatusBarAppearanceUpdate()
-        }
-    }
-
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return statusBarStyle
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        statusBarStyle = .lightContent
         setNavigationBarGradient()
         gradient.frame = view.bounds
         view.layer.insertSublayer(gradient, at:0)
