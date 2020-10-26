@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A4E2E12534A7B600366D0F /* UIButton+layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E02534A7B600366D0F /* UIButton+layer.swift */; };
+		02A4E2E42535928E00366D0F /* VODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E32535928E00366D0F /* VODViewController.swift */; };
+		02BE1996253484FF00422CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1995253484FF00422CDB /* AppDelegate.swift */; };
+		02BE1998253484FF00422CDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1997253484FF00422CDB /* SceneDelegate.swift */; };
+		02BE199A253484FF00422CDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1999253484FF00422CDB /* MainViewController.swift */; };
+		02BE199D2534850000422CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BE199B253484FF00422CDB /* Main.storyboard */; };
+		02BE199F2534850200422CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BE199E2534850200422CDB /* Assets.xcassets */; };
+		02BE19A22534850200422CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19A02534850200422CDB /* LaunchScreen.storyboard */; };
+		02BE19CE2534981600422CDB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE19CD2534981600422CDB /* BaseViewController.swift */; };
+		02BE19E325349C2100422CDB /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D125349C2100422CDB /* Lato-LightItalic.ttf */; };
+		02BE19E425349C2100422CDB /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D225349C2100422CDB /* Lato-MediumItalic.ttf */; };
+		02BE19E525349C2100422CDB /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D325349C2100422CDB /* Lato-Thin.ttf */; };
+		02BE19E625349C2100422CDB /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D425349C2100422CDB /* Lato-HairlineItalic.ttf */; };
+		02BE19E725349C2100422CDB /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D525349C2100422CDB /* Lato-Bold.ttf */; };
+		02BE19E825349C2100422CDB /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D625349C2100422CDB /* Lato-BlackItalic.ttf */; };
+		02BE19E925349C2100422CDB /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D725349C2100422CDB /* Lato-Black.ttf */; };
+		02BE19EA25349C2100422CDB /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D825349C2100422CDB /* Lato-BoldItalic.ttf */; };
+		02BE19EB25349C2100422CDB /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19D925349C2100422CDB /* Lato-Italic.ttf */; };
+		02BE19EC25349C2100422CDB /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19DA25349C2100422CDB /* Lato-HeavyItalic.ttf */; };
+		02BE19ED25349C2100422CDB /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19DB25349C2100422CDB /* Lato-Medium.ttf */; };
+		02BE19EE25349C2100422CDB /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19DC25349C2100422CDB /* Lato-Regular.ttf */; };
+		02BE19EF25349C2100422CDB /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19DD25349C2100422CDB /* Lato-SemiboldItalic.ttf */; };
+		02BE19F025349C2100422CDB /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19DE25349C2100422CDB /* Lato-ThinItalic.ttf */; };
+		02BE19F125349C2100422CDB /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19DF25349C2100422CDB /* Lato-Semibold.ttf */; };
+		02BE19F225349C2100422CDB /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19E025349C2100422CDB /* Lato-Light.ttf */; };
+		02BE19F325349C2100422CDB /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19E125349C2100422CDB /* Lato-Hairline.ttf */; };
+		02BE19F425349C2100422CDB /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19E225349C2100422CDB /* Lato-Heavy.ttf */; };
+		53F18D0AD59D70B9C2671770 /* Pods_S2S_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02A4E2E02534A7B600366D0F /* UIButton+layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+layer.swift"; sourceTree = "<group>"; };
+		02A4E2E32535928E00366D0F /* VODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VODViewController.swift; sourceTree = "<group>"; };
+		02BE1992253484FF00422CDB /* S2S Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S2S Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02BE1995253484FF00422CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02BE1997253484FF00422CDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		02BE1999253484FF00422CDB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		02BE199C2534850000422CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02BE199E2534850200422CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02BE19A12534850200422CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02BE19A32534850200422CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02BE19CD2534981600422CDB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		02BE19D125349C2100422CDB /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		02BE19D225349C2100422CDB /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		02BE19D325349C2100422CDB /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		02BE19D425349C2100422CDB /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		02BE19D525349C2100422CDB /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		02BE19D625349C2100422CDB /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		02BE19D725349C2100422CDB /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		02BE19D825349C2100422CDB /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		02BE19D925349C2100422CDB /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		02BE19DA25349C2100422CDB /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		02BE19DB25349C2100422CDB /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		02BE19DC25349C2100422CDB /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		02BE19DD25349C2100422CDB /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		02BE19DE25349C2100422CDB /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		02BE19DF25349C2100422CDB /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		02BE19E025349C2100422CDB /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		02BE19E125349C2100422CDB /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		02BE19E225349C2100422CDB /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S2S_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D493D6B39AC93DD886F135C /* Pods-S2S Demo App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S2S Demo App.debug.xcconfig"; path = "Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App.debug.xcconfig"; sourceTree = "<group>"; };
+		EFAC424C0294AB7EB07D9102 /* Pods-S2S Demo App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S2S Demo App.release.xcconfig"; path = "Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02BE198F253484FF00422CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F18D0AD59D70B9C2671770 /* Pods_S2S_Demo_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02A4E2DF2534A79E00366D0F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02A4E2E02534A7B600366D0F /* UIButton+layer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		02BE1989253484FF00422CDB = {
+			isa = PBXGroup;
+			children = (
+				02BE1994253484FF00422CDB /* S2S Demo App */,
+				02BE1993253484FF00422CDB /* Products */,
+				9C665EB2EBAB005F3812ECE0 /* Pods */,
+				8DE15BDB184CFB7122F27EA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02BE1993253484FF00422CDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02BE1992253484FF00422CDB /* S2S Demo App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02BE1994253484FF00422CDB /* S2S Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				02A4E2DF2534A79E00366D0F /* Extensions */,
+				02BE19D025349BFF00422CDB /* Ressources */,
+				02BE19CC2534980500422CDB /* UI */,
+				02BE1995253484FF00422CDB /* AppDelegate.swift */,
+				02BE1997253484FF00422CDB /* SceneDelegate.swift */,
+				02BE199B253484FF00422CDB /* Main.storyboard */,
+				02BE199E2534850200422CDB /* Assets.xcassets */,
+				02BE19A02534850200422CDB /* LaunchScreen.storyboard */,
+				02BE19A32534850200422CDB /* Info.plist */,
+			);
+			path = "S2S Demo App";
+			sourceTree = "<group>";
+		};
+		02BE19CC2534980500422CDB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				02BE1999253484FF00422CDB /* MainViewController.swift */,
+				02BE19CD2534981600422CDB /* BaseViewController.swift */,
+				02A4E2E32535928E00366D0F /* VODViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		02BE19D025349BFF00422CDB /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				02BE19D725349C2100422CDB /* Lato-Black.ttf */,
+				02BE19D625349C2100422CDB /* Lato-BlackItalic.ttf */,
+				02BE19D525349C2100422CDB /* Lato-Bold.ttf */,
+				02BE19D825349C2100422CDB /* Lato-BoldItalic.ttf */,
+				02BE19E125349C2100422CDB /* Lato-Hairline.ttf */,
+				02BE19D425349C2100422CDB /* Lato-HairlineItalic.ttf */,
+				02BE19E225349C2100422CDB /* Lato-Heavy.ttf */,
+				02BE19DA25349C2100422CDB /* Lato-HeavyItalic.ttf */,
+				02BE19D925349C2100422CDB /* Lato-Italic.ttf */,
+				02BE19E025349C2100422CDB /* Lato-Light.ttf */,
+				02BE19D125349C2100422CDB /* Lato-LightItalic.ttf */,
+				02BE19DB25349C2100422CDB /* Lato-Medium.ttf */,
+				02BE19D225349C2100422CDB /* Lato-MediumItalic.ttf */,
+				02BE19DC25349C2100422CDB /* Lato-Regular.ttf */,
+				02BE19DF25349C2100422CDB /* Lato-Semibold.ttf */,
+				02BE19DD25349C2100422CDB /* Lato-SemiboldItalic.ttf */,
+				02BE19D325349C2100422CDB /* Lato-Thin.ttf */,
+				02BE19DE25349C2100422CDB /* Lato-ThinItalic.ttf */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		8DE15BDB184CFB7122F27EA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C665EB2EBAB005F3812ECE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D493D6B39AC93DD886F135C /* Pods-S2S Demo App.debug.xcconfig */,
+				EFAC424C0294AB7EB07D9102 /* Pods-S2S Demo App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02BE1991253484FF00422CDB /* S2S Demo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02BE19A62534850200422CDB /* Build configuration list for PBXNativeTarget "S2S Demo App" */;
+			buildPhases = (
+				C7BE962AB69E484B5C3031B3 /* [CP] Check Pods Manifest.lock */,
+				02BE198E253484FF00422CDB /* Sources */,
+				02BE198F253484FF00422CDB /* Frameworks */,
+				02BE1990253484FF00422CDB /* Resources */,
+				08603BB750CDC8B34831A94A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "S2S Demo App";
+			productName = "S2S Demo App";
+			productReference = 02BE1992253484FF00422CDB /* S2S Demo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02BE198A253484FF00422CDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					02BE1991253484FF00422CDB = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 02BE198D253484FF00422CDB /* Build configuration list for PBXProject "S2S Demo App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02BE1989253484FF00422CDB;
+			productRefGroup = 02BE1993253484FF00422CDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02BE1991253484FF00422CDB /* S2S Demo App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02BE1990253484FF00422CDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02BE19F425349C2100422CDB /* Lato-Heavy.ttf in Resources */,
+				02BE19A22534850200422CDB /* LaunchScreen.storyboard in Resources */,
+				02BE19F225349C2100422CDB /* Lato-Light.ttf in Resources */,
+				02BE19E525349C2100422CDB /* Lato-Thin.ttf in Resources */,
+				02BE199F2534850200422CDB /* Assets.xcassets in Resources */,
+				02BE199D2534850000422CDB /* Main.storyboard in Resources */,
+				02BE19EA25349C2100422CDB /* Lato-BoldItalic.ttf in Resources */,
+				02BE19F325349C2100422CDB /* Lato-Hairline.ttf in Resources */,
+				02BE19EF25349C2100422CDB /* Lato-SemiboldItalic.ttf in Resources */,
+				02BE19ED25349C2100422CDB /* Lato-Medium.ttf in Resources */,
+				02BE19E625349C2100422CDB /* Lato-HairlineItalic.ttf in Resources */,
+				02BE19EE25349C2100422CDB /* Lato-Regular.ttf in Resources */,
+				02BE19E825349C2100422CDB /* Lato-BlackItalic.ttf in Resources */,
+				02BE19EC25349C2100422CDB /* Lato-HeavyItalic.ttf in Resources */,
+				02BE19F125349C2100422CDB /* Lato-Semibold.ttf in Resources */,
+				02BE19E325349C2100422CDB /* Lato-LightItalic.ttf in Resources */,
+				02BE19E425349C2100422CDB /* Lato-MediumItalic.ttf in Resources */,
+				02BE19E925349C2100422CDB /* Lato-Black.ttf in Resources */,
+				02BE19EB25349C2100422CDB /* Lato-Italic.ttf in Resources */,
+				02BE19E725349C2100422CDB /* Lato-Bold.ttf in Resources */,
+				02BE19F025349C2100422CDB /* Lato-ThinItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08603BB750CDC8B34831A94A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BE962AB69E484B5C3031B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-S2S Demo App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02BE198E253484FF00422CDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02BE199A253484FF00422CDB /* MainViewController.swift in Sources */,
+				02A4E2E12534A7B600366D0F /* UIButton+layer.swift in Sources */,
+				02A4E2E42535928E00366D0F /* VODViewController.swift in Sources */,
+				02BE19CE2534981600422CDB /* BaseViewController.swift in Sources */,
+				02BE1996253484FF00422CDB /* AppDelegate.swift in Sources */,
+				02BE1998253484FF00422CDB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02BE199B253484FF00422CDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02BE199C2534850000422CDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02BE19A02534850200422CDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02BE19A12534850200422CDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02BE19A42534850200422CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02BE19A52534850200422CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02BE19A72534850200422CDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D493D6B39AC93DD886F135C /* Pods-S2S Demo App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU4LQN6JQH;
+				INFOPLIST_FILE = "S2S Demo App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gfk.s2s.sensic-demo-app-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02BE19A82534850200422CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAC424C0294AB7EB07D9102 /* Pods-S2S Demo App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HU4LQN6JQH;
+				INFOPLIST_FILE = "S2S Demo App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gfk.s2s.sensic-demo-app-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SENSIC Demo App Distribution (Github Source)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02BE198D253484FF00422CDB /* Build configuration list for PBXProject "S2S Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02BE19A42534850200422CDB /* Debug */,
+				02BE19A52534850200422CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02BE19A62534850200422CDB /* Build configuration list for PBXNativeTarget "S2S Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02BE19A72534850200422CDB /* Debug */,
+				02BE19A82534850200422CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02BE198A253484FF00422CDB /* Project object */;
+}
