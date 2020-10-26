@@ -6,17 +6,9 @@
 //
 
 import UIKit
-import AVKit
-import AVFoundation
 
 class BaseViewController: UIViewController {
-    
-    var player: CustomAVPlayer!
-    var playerViewController: AVPlayerViewController!
-    var videoUrl: String?
-    
-    @IBOutlet weak var playerView: UIView!
-    
+        
     lazy var gradient: CAGradientLayer = {
         let gradient = CAGradientLayer()
         gradient.type = .axial
@@ -78,50 +70,5 @@ class BaseViewController: UIViewController {
     
     func setNavigationBarTitle(title: String) {
         self.title = title
-    }
-    
-    //MARK: Videoplayer
-    
-    func setupVideoPlayer() {
-        if let videoURL = self.videoUrl {
-            player = CustomAVPlayer(url: URL(string: videoURL)!)
-            playerViewController = AVPlayerViewController()
-            playerViewController.player = player
-            playerViewController.view.frame = playerView.bounds
-            playerViewController.player?.pause()
-            playerView.addSubview(playerViewController.view)
-            playerViewController.view.backgroundColor = UIColor.clear
-            
-            setupVideoPlayerObserver()
-        }
-    }
-    
-    private func setupVideoPlayerObserver() {
-        player.addObserver(self, forKeyPath: #keyPath(AVPlayer.rate), options: NSKeyValueObservingOptions.new, context: nil)
-        player.addObserver(self, forKeyPath: #keyPath(AVPlayer.status), options: NSKeyValueObservingOptions.new, context: nil)
-        
-        player.didSeek = { toTime in
-            print("Seeking started to: \(toTime.value)")
-        }
-        player.didPressSeekButton = {
-            print("Seeking pressed")
-        }
-    }
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == #keyPath(AVPlayer.rate) {
-            if player.rate > 0 {
-                print("video started")
-            } else {
-                print("video pause/stopped")
-            }
-        } else if keyPath == #keyPath(AVPlayer.status) {
-            
-        }
-    }
-    
-    func removeVideoPlayerObserver() {
-        player.removeObserver(self, forKeyPath: #keyPath(AVPlayer.rate))
-        player.removeObserver(self, forKeyPath: #keyPath(AVPlayer.status))
     }
 }

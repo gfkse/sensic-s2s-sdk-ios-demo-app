@@ -174,7 +174,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="La0-hS-EP5"/>
                     <connections>
-                        <outlet property="playerView" destination="4MO-6K-cbP" id="IZr-1A-AXG"/>
+                        <outlet property="playerView" destination="4MO-6K-cbP" id="2q3-zs-cFU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezS-Dp-TAM" sceneMemberID="firstResponder"/>

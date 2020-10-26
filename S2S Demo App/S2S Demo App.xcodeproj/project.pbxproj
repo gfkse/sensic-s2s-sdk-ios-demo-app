@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02772923253ECE6D00D6E11A /* s2s_sdk_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */; };
+		02772924253ECE6D00D6E11A /* s2s_sdk_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02A4E2E12534A7B600366D0F /* UIButton+layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E02534A7B600366D0F /* UIButton+layer.swift */; };
 		02A4E2E42535928E00366D0F /* VODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E32535928E00366D0F /* VODViewController.swift */; };
-		02A4E2E92535B50300366D0F /* CustomAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E82535B50300366D0F /* CustomAVPlayer.swift */; };
 		02BE1996253484FF00422CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1995253484FF00422CDB /* AppDelegate.swift */; };
 		02BE1998253484FF00422CDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1997253484FF00422CDB /* SceneDelegate.swift */; };
 		02BE199A253484FF00422CDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1999253484FF00422CDB /* MainViewController.swift */; };
@@ -38,10 +39,24 @@
 		53F18D0AD59D70B9C2671770 /* Pods_S2S_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		02772925253ECE6D00D6E11A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				02772924253ECE6D00D6E11A /* s2s_sdk_ios.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = s2s_sdk_ios.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/S2S_Demo_App-dizjazvopnfkzgdiiusdlzrqxeeq/Build/Products/Debug-iphoneos/s2s_sdk_ios.framework"; sourceTree = "<group>"; };
 		02A4E2E02534A7B600366D0F /* UIButton+layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+layer.swift"; sourceTree = "<group>"; };
 		02A4E2E32535928E00366D0F /* VODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VODViewController.swift; sourceTree = "<group>"; };
-		02A4E2E82535B50300366D0F /* CustomAVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayer.swift; sourceTree = "<group>"; };
 		02BE1992253484FF00422CDB /* S2S Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S2S Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BE1995253484FF00422CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02BE1997253484FF00422CDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02772923253ECE6D00D6E11A /* s2s_sdk_ios.framework in Frameworks */,
 				53F18D0AD59D70B9C2671770 /* Pods_S2S_Demo_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,14 +108,6 @@
 				02A4E2E02534A7B600366D0F /* UIButton+layer.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		02A4E2E72535B4ED00366D0F /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				02A4E2E82535B50300366D0F /* CustomAVPlayer.swift */,
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 		02BE1989253484FF00422CDB = {
@@ -123,7 +131,6 @@
 		02BE1994253484FF00422CDB /* S2S Demo App */ = {
 			isa = PBXGroup;
 			children = (
-				02A4E2E72535B4ED00366D0F /* Custom */,
 				02A4E2DF2534A79E00366D0F /* Extensions */,
 				02BE19D025349BFF00422CDB /* Ressources */,
 				02BE19CC2534980500422CDB /* UI */,
@@ -175,6 +182,7 @@
 		8DE15BDB184CFB7122F27EA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */,
 				74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */,
 			);
 			name = Frameworks;
@@ -186,7 +194,6 @@
 				9D493D6B39AC93DD886F135C /* Pods-S2S Demo App.debug.xcconfig */,
 				EFAC424C0294AB7EB07D9102 /* Pods-S2S Demo App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -201,7 +208,7 @@
 				02BE198E253484FF00422CDB /* Sources */,
 				02BE198F253484FF00422CDB /* Frameworks */,
 				02BE1990253484FF00422CDB /* Resources */,
-				7BFE7B455DEAA7B8031CC68E /* [CP] Embed Pods Frameworks */,
+				02772925253ECE6D00D6E11A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,23 +283,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7BFE7B455DEAA7B8031CC68E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C7BE962AB69E484B5C3031B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A4E2E92535B50300366D0F /* CustomAVPlayer.swift in Sources */,
 				02BE199A253484FF00422CDB /* MainViewController.swift in Sources */,
 				02A4E2E12534A7B600366D0F /* UIButton+layer.swift in Sources */,
 				02A4E2E42535928E00366D0F /* VODViewController.swift in Sources */,
@@ -479,7 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU4LQN6JQH;
 				INFOPLIST_FILE = "S2S Demo App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,16 +486,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = HU4LQN6JQH;
 				INFOPLIST_FILE = "S2S Demo App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gfk.s2s.sensic-demo-app-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SENSIC Demo App Distribution (Github Source)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

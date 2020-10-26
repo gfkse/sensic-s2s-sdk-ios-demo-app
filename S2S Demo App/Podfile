@@ -3,5 +3,5 @@ target 'S2S Demo App' do
   use_frameworks!
   platform :ios, '12.0'
 
-  pod 'S2S-SDK'
+  pod 'S2S-SDK', :git => 'https://github.com/gfkse/sensic-s2s-sdk-ios.git', :branch => 'demo-pre-production'
 end
