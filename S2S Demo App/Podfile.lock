@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: c83c501c6fa1beb145bb5b84e71320a4ad0116aa
+PODS:
+  - S2S-SDK (1)
+
+DEPENDENCIES:
+  - S2S-SDK (from `https://github.com/gfkse/sensic-s2s-sdk-ios.git`, branch `demo-pre-production`)
+
+EXTERNAL SOURCES:
+  S2S-SDK:
+    :branch: demo-pre-production
+    :git: https://github.com/gfkse/sensic-s2s-sdk-ios.git
+
+CHECKOUT OPTIONS:
+  S2S-SDK:
+    :commit: a3a4dca7a252bd33ae95dfb83d50fc91b2d848fe
+    :git: https://github.com/gfkse/sensic-s2s-sdk-ios.git
+
+SPEC CHECKSUMS:
+  S2S-SDK: e51e5647d5c0cb9590af8280d0f121bf50404585
+
+PODFILE CHECKSUM: fa06e81e8644f5299523712b95190836e23c555b
 
 COCOAPODS: 1.9.3

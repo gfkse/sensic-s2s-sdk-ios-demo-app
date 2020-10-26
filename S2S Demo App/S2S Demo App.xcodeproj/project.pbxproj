@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02772923253ECE6D00D6E11A /* s2s_sdk_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */; };
-		02772924253ECE6D00D6E11A /* s2s_sdk_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02A4E2E12534A7B600366D0F /* UIButton+layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E02534A7B600366D0F /* UIButton+layer.swift */; };
 		02A4E2E42535928E00366D0F /* VODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E32535928E00366D0F /* VODViewController.swift */; };
 		02BE1996253484FF00422CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1995253484FF00422CDB /* AppDelegate.swift */; };
@@ -38,20 +36,6 @@
 		02BE19F425349C2100422CDB /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02BE19E225349C2100422CDB /* Lato-Heavy.ttf */; };
 		53F18D0AD59D70B9C2671770 /* Pods_S2S_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		02772925253ECE6D00D6E11A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				02772924253ECE6D00D6E11A /* s2s_sdk_ios.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02772922253ECE6D00D6E11A /* s2s_sdk_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = s2s_sdk_ios.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/S2S_Demo_App-dizjazvopnfkzgdiiusdlzrqxeeq/Build/Products/Debug-iphoneos/s2s_sdk_ios.framework"; sourceTree = "<group>"; };
@@ -94,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02772923253ECE6D00D6E11A /* s2s_sdk_ios.framework in Frameworks */,
 				53F18D0AD59D70B9C2671770 /* Pods_S2S_Demo_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +191,7 @@
 				02BE198E253484FF00422CDB /* Sources */,
 				02BE198F253484FF00422CDB /* Frameworks */,
 				02BE1990253484FF00422CDB /* Resources */,
-				02772925253ECE6D00D6E11A /* Embed Frameworks */,
+				08603BB750CDC8B34831A94A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +266,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		08603BB750CDC8B34831A94A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C7BE962AB69E484B5C3031B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
