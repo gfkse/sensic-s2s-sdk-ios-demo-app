@@ -1,10 +1,3 @@
-//
-//  UIButton+layer.swift
-//  S2S Demo App
-//
-//  Created by Christian Müller on 12.10.20.
-//
-
 import UIKit
 
 extension UIButton {
