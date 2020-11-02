@@ -19,5 +19,4 @@ extension UIButton {
         
         button.titleLabel?.font = UIFont(name: "Lato", size: 17)
     }
-
 }
