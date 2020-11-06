@@ -3,7 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,6 +58,9 @@
                                 <state key="normal">
                                     <attributedString key="attributedTitle"/>
                                 </state>
+                                <connections>
+                                    <segue destination="upM-9P-lnm" kind="show" id="H1l-dm-Zif"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PRZ-Az-Uxq">
                                 <rect key="frame" x="255" y="192" width="100" height="150"/>
@@ -179,7 +182,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezS-Dp-TAM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1965.5999999999999" y="117.48768472906404"/>
+            <point key="canvasLocation" x="2068" y="118"/>
+        </scene>
+        <!--Live View Controller-->
+        <scene sceneID="yHn-sU-XaZ">
+            <objects>
+                <viewController id="upM-9P-lnm" customClass="LiveViewController" customModule="S2S_Demo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uP6-10-UoW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GfK-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="czX-M8-zqz">
+                                <rect key="frame" x="20" y="108" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T0B-KP-jxC"/>
+                                    <constraint firstAttribute="width" constant="50" id="lmW-eI-Om3"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvn-Oe-FPv">
+                                <rect key="frame" x="0.0" y="211" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="7VN-De-bbg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kDf-SA-hTT"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="czX-M8-zqz" firstAttribute="leading" secondItem="kDf-SA-hTT" secondAttribute="leading" constant="20" id="773-63-csc"/>
+                            <constraint firstItem="kDf-SA-hTT" firstAttribute="trailing" secondItem="Yvn-Oe-FPv" secondAttribute="trailing" id="Kzw-1M-gZv"/>
+                            <constraint firstItem="Yvn-Oe-FPv" firstAttribute="leading" secondItem="kDf-SA-hTT" secondAttribute="leading" id="LrH-pW-TJA"/>
+                            <constraint firstItem="Yvn-Oe-FPv" firstAttribute="top" secondItem="czX-M8-zqz" secondAttribute="bottom" constant="53" id="RvA-Am-Kwn"/>
+                            <constraint firstItem="czX-M8-zqz" firstAttribute="top" secondItem="kDf-SA-hTT" secondAttribute="top" constant="20" id="fah-nx-9VV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QqA-AO-EgP"/>
+                    <connections>
+                        <outlet property="playerView" destination="Yvn-Oe-FPv" id="fi1-yJ-dvM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHG-Pq-8pa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2921" y="118"/>
         </scene>
     </scenes>
     <resources>

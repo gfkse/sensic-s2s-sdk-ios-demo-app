@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0284AC56255161740068CC12 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284AC55255161740068CC12 /* LiveViewController.swift */; };
 		02A4E2E12534A7B600366D0F /* UIButton+layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E02534A7B600366D0F /* UIButton+layer.swift */; };
 		02A4E2E42535928E00366D0F /* VODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4E2E32535928E00366D0F /* VODViewController.swift */; };
+		02B567F7255165F200DCA39F /* s2s_sdk_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B567F6255165F200DCA39F /* s2s_sdk_ios.framework */; };
+		02B567F8255165F200DCA39F /* s2s_sdk_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02B567F6255165F200DCA39F /* s2s_sdk_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02BE1996253484FF00422CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1995253484FF00422CDB /* AppDelegate.swift */; };
 		02BE1998253484FF00422CDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1997253484FF00422CDB /* SceneDelegate.swift */; };
 		02BE199A253484FF00422CDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BE1999253484FF00422CDB /* MainViewController.swift */; };
@@ -37,9 +40,25 @@
 		53F18D0AD59D70B9C2671770 /* Pods_S2S_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		02B567F9255165F200DCA39F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				02B567F8255165F200DCA39F /* s2s_sdk_ios.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0284AC55255161740068CC12 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		02A4E2E02534A7B600366D0F /* UIButton+layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+layer.swift"; sourceTree = "<group>"; };
 		02A4E2E32535928E00366D0F /* VODViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VODViewController.swift; sourceTree = "<group>"; };
+		02B567F6255165F200DCA39F /* s2s_sdk_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = s2s_sdk_ios.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/S2S_Demo_App-dizjazvopnfkzgdiiusdlzrqxeeq/Build/Products/Debug-iphoneos/s2s_sdk_ios.framework"; sourceTree = "<group>"; };
 		02BE1992253484FF00422CDB /* S2S Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S2S Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BE1995253484FF00422CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02BE1997253484FF00422CDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B567F7255165F200DCA39F /* s2s_sdk_ios.framework in Frameworks */,
 				53F18D0AD59D70B9C2671770 /* Pods_S2S_Demo_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +152,7 @@
 				02BE1999253484FF00422CDB /* MainViewController.swift */,
 				02BE19CD2534981600422CDB /* BaseViewController.swift */,
 				02A4E2E32535928E00366D0F /* VODViewController.swift */,
+				0284AC55255161740068CC12 /* LiveViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -164,6 +185,7 @@
 		8DE15BDB184CFB7122F27EA1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02B567F6255165F200DCA39F /* s2s_sdk_ios.framework */,
 				74F4DB5DC14A5DB26AD0221A /* Pods_S2S_Demo_App.framework */,
 			);
 			name = Frameworks;
@@ -189,7 +211,7 @@
 				02BE198E253484FF00422CDB /* Sources */,
 				02BE198F253484FF00422CDB /* Frameworks */,
 				02BE1990253484FF00422CDB /* Resources */,
-				08603BB750CDC8B34831A94A /* [CP] Embed Pods Frameworks */,
+				02B567F9255165F200DCA39F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,23 +286,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08603BB750CDC8B34831A94A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-S2S Demo App/Pods-S2S Demo App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C7BE962AB69E484B5C3031B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +317,7 @@
 			files = (
 				02BE199A253484FF00422CDB /* MainViewController.swift in Sources */,
 				02A4E2E12534A7B600366D0F /* UIButton+layer.swift in Sources */,
+				0284AC56255161740068CC12 /* LiveViewController.swift in Sources */,
 				02A4E2E42535928E00366D0F /* VODViewController.swift in Sources */,
 				02BE19CE2534981600422CDB /* BaseViewController.swift in Sources */,
 				02BE1996253484FF00422CDB /* AppDelegate.swift in Sources */,
