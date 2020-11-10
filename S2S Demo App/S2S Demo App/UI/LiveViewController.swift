@@ -12,13 +12,11 @@ class LiveViewController: BaseViewController {
     private var player: AVPlayer!
     private var playerViewController: AVPlayerViewController!
     private var s2sAgent: S2SAgent?
-    private var s2sExtension: S2SExtension?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBarTitle(title: "Live Video")
         setupVideoPlayer()
-        
         do {
             s2sAgent = try S2SAgent(configUrl: "https://demo-config-preproduction.sensic.net/s2s-ios.json", mediaId: "s2sdemomediaid_ssa_ios_new")
         } catch let error {
@@ -26,21 +24,14 @@ class LiveViewController: BaseViewController {
         }
         
         if let agent = s2sAgent {
-            s2sExtension = S2SExtension(contentId: "contentId", customParams: ["":""])
-            s2sExtension?.bindAVLivePlayer(avPlayer: player, s2sAgent: agent)
+            let s2sExtension = S2SExtension(contentId: "contentId", customParams: ["":""])
+            s2sExtension.bindAVLivePlayer(avPlayer: self.player, s2sAgent: agent)
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        if self.isMovingFromParent {
-            s2sExtension?.stopBindingAVPlayer(avPlayer: player)
-        }
-    }
-        
     //MARK: Videoplayer
     
-    func setupVideoPlayer() {
+    private func setupVideoPlayer() {
         player = AVPlayer(url: URL(string: liveUrl)!)
         playerViewController = AVPlayerViewController()
         playerViewController.player = player

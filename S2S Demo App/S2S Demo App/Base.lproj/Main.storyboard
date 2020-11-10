@@ -72,6 +72,9 @@
                                 <state key="normal">
                                     <attributedString key="attributedTitle"/>
                                 </state>
+                                <connections>
+                                    <segue destination="e4p-Av-frK" kind="show" id="idE-kw-5Qy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Am-A3-xqn">
                                 <rect key="frame" x="203" y="358" width="100" height="150"/>
@@ -106,9 +109,9 @@
                     <connections>
                         <outlet property="contentButton" destination="V8I-wI-ZhE" id="Ds0-Su-osP"/>
                         <outlet property="liveButton" destination="d72-em-0Sg" id="BIb-qR-K8W"/>
+                        <outlet property="liveNoSeekButton" destination="PRZ-Az-Uxq" id="Bbv-bE-wYr"/>
                         <outlet property="settingsButton" destination="5Am-A3-xqn" id="eog-97-qPy"/>
                         <outlet property="vodButton" destination="LdX-os-6Hf" id="uW5-YI-hhQ"/>
-                        <outlet property="webButton" destination="PRZ-Az-Uxq" id="Bbv-bE-wYr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -224,6 +227,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHG-Pq-8pa" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2921" y="118"/>
+        </scene>
+        <!--Live No Seek Bar View Controller-->
+        <scene sceneID="lZc-Sw-fqI">
+            <objects>
+                <viewController id="e4p-Av-frK" customClass="LiveNoSeekBarViewController" customModule="S2S_Demo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4T-Mw-lzF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GfK-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="jDF-K8-F4k">
+                                <rect key="frame" x="20" y="108" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FdC-Uw-Gpd"/>
+                                    <constraint firstAttribute="width" constant="50" id="MDy-oQ-xFl"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbd-3N-WP3">
+                                <rect key="frame" x="0.0" y="211" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="bjS-Fm-yHa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8vs-29-deS"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gbd-3N-WP3" firstAttribute="top" secondItem="jDF-K8-F4k" secondAttribute="bottom" constant="53" id="61s-Bo-Gkb"/>
+                            <constraint firstItem="jDF-K8-F4k" firstAttribute="leading" secondItem="8vs-29-deS" secondAttribute="leading" constant="20" id="fRn-hf-H6t"/>
+                            <constraint firstItem="jDF-K8-F4k" firstAttribute="top" secondItem="8vs-29-deS" secondAttribute="top" constant="20" id="mqh-2J-gXv"/>
+                            <constraint firstItem="gbd-3N-WP3" firstAttribute="leading" secondItem="8vs-29-deS" secondAttribute="leading" id="r4L-lK-MaT"/>
+                            <constraint firstItem="8vs-29-deS" firstAttribute="trailing" secondItem="gbd-3N-WP3" secondAttribute="trailing" id="y3P-YG-hcw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pwj-ku-J3d"/>
+                    <connections>
+                        <outlet property="playerView" destination="gbd-3N-WP3" id="Haw-yM-mGX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuB-RW-Dio" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3719" y="118"/>
         </scene>
     </scenes>
     <resources>
