@@ -12,7 +12,6 @@ class VODViewController: BaseViewController {
     private var player: AVPlayer!
     private var playerViewController: AVPlayerViewController!
     private var s2sAgent: S2SAgent?
-    private var s2sExtension: S2SExtension?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +25,12 @@ class VODViewController: BaseViewController {
         }
         
         if let agent = s2sAgent {
-            s2sExtension = S2SExtension(contentId: "contentId", customParams: ["":""])
-            s2sExtension?.bindAVPlayer(avPlayer: player, s2sAgent: agent)
+            //Important: Do not hold a strong reference to the extension
+            let s2sExtension = S2SExtension(contentId: "contentId", customParams: ["":""])
+            s2sExtension.bindAVPlayer(avPlayerController: playerViewController, s2sAgent: agent)
         }
     }
-        
+    
     //MARK: Videoplayer
     
     func setupVideoPlayer() {

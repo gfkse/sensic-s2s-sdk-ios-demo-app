@@ -24,8 +24,9 @@ class LiveViewController: BaseViewController {
         }
         
         if let agent = s2sAgent {
+            //Important: Do not hold a strong reference to the extension
             let s2sExtension = S2SExtension(contentId: "contentId", customParams: ["":""])
-            s2sExtension.bindAVLivePlayer(avPlayer: self.player, s2sAgent: agent)
+            s2sExtension.bindAVLivePlayer(avPlayerController: self.playerViewController, s2sAgent: agent)
         }
     }
     
